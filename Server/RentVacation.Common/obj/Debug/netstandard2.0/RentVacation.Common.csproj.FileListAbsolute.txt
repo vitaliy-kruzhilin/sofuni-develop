@@ -1,0 +1,9 @@
+D:\project\sofuni-develop\Server\RentVacation.Common\bin\Debug\netstandard2.0\RentVacation.Common.deps.json
+D:\project\sofuni-develop\Server\RentVacation.Common\bin\Debug\netstandard2.0\RentVacation.Common.dll
+D:\project\sofuni-develop\Server\RentVacation.Common\bin\Debug\netstandard2.0\RentVacation.Common.pdb
+D:\project\sofuni-develop\Server\RentVacation.Common\obj\Debug\netstandard2.0\RentVacation.Common.csprojAssemblyReference.cache
+D:\project\sofuni-develop\Server\RentVacation.Common\obj\Debug\netstandard2.0\RentVacation.Common.AssemblyInfoInputs.cache
+D:\project\sofuni-develop\Server\RentVacation.Common\obj\Debug\netstandard2.0\RentVacation.Common.AssemblyInfo.cs
+D:\project\sofuni-develop\Server\RentVacation.Common\obj\Debug\netstandard2.0\RentVacation.Common.csproj.CoreCompileInputs.cache
+D:\project\sofuni-develop\Server\RentVacation.Common\obj\Debug\netstandard2.0\RentVacation.Common.dll
+D:\project\sofuni-develop\Server\RentVacation.Common\obj\Debug\netstandard2.0\RentVacation.Common.pdb
