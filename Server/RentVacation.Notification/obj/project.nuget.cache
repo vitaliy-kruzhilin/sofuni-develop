@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BjjgYisWtCstwX6TVLs8n2rSIDk+qKyY9JRC8Q4NR9Zd8q/clA2LvQbN9bDmEf5D3N7zphBorApc3M95cmvh2w==",
+  "dgSpecHash": "UT/C7sv2yElnDche9wBXlmiL03pmQFp9fW3+DUmW4063sXUFnxnjNjIHmDKERekpUDPsJ10Xpgi9qncWSRRixA==",
   "success": true,
-  "projectFilePath": "D:\\project\\sofuni-develop\\Server\\RentVacation.Notification\\RentVacation.Notification.csproj",
+  "projectFilePath": "D:\\project\\sofuni-develop1\\Server\\RentVacation.Notification\\RentVacation.Notification.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Profesor\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\Profesor\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.0\\automapper.extensions.microsoft.dependencyinjection.8.0.0.nupkg.sha512",

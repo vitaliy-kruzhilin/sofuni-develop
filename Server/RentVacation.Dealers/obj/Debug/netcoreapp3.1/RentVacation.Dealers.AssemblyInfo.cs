@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("bc02aa06-eeab-4e78-9e4b-9b69135ee4e4")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("RentVacation.Dealers")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

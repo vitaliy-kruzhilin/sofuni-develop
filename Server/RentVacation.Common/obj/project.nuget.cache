@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2sDoEnBY5OH92qZnnLYIW0Aay7K5UNx+t8fQK7K+IMArIiBp1wlJMAVgvQzLUUGSg+7vNr3jnGUakMJcK2NH1g==",
+  "dgSpecHash": "5WH8jQOfKNTrzk7HOxoPbb+O5Tn3AmTbX2kgHPwmst39PEXq5W405QKR+xr8G4IAPep967q26+c2HPhUDco/Tg==",
   "success": true,
-  "projectFilePath": "D:\\project\\sofuni-develop\\Server\\RentVacation.Common\\RentVacation.Common.csproj",
+  "projectFilePath": "D:\\project\\sofuni-develop1\\Server\\RentVacation.Common\\RentVacation.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Profesor\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\Profesor\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.0\\automapper.extensions.microsoft.dependencyinjection.8.0.0.nupkg.sha512",

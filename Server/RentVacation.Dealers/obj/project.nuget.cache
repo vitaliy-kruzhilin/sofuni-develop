@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6xxEnPXr+26RtCaOdSe+l6qpimY4v/YniRbGcCq910Oa3/E5Hwt9NRcrLlLfEMSfS5pT4bigWJ6TILTKsXgATw==",
+  "dgSpecHash": "BIf9NVtbrSTLeZWUrY979u4Y9Y6BTWywR9fT8yySBbNF54Zwxuox1D7QCjkdRdO1C/kC3hbCDZEDg+XB035YwA==",
   "success": true,
-  "projectFilePath": "D:\\project\\sofuni-develop\\Server\\RentVacation.Dealers\\RentVacation.Dealers.csproj",
+  "projectFilePath": "D:\\project\\sofuni-develop1\\Server\\RentVacation.Dealers\\RentVacation.Dealers.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Profesor\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\Profesor\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.0\\automapper.extensions.microsoft.dependencyinjection.8.0.0.nupkg.sha512",
@@ -47,6 +47,7 @@
     "C:\\Users\\Profesor\\.nuget\\packages\\microsoft.identitymodel.tokens\\5.5.0\\microsoft.identitymodel.tokens.5.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\Profesor\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",

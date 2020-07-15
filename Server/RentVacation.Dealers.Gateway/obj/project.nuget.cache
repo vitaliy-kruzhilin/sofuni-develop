@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7F76xkXHYo11Ok/jCHRCbUnp5Pgg1jPm0JjMCEAAcuS0NKFP8dRRnMrwI9AZ4NQuA2tpYanr6WWfgxRZfSFvUg==",
+  "dgSpecHash": "gQGUZOgRKfJ1uvBItNbQOJ7pTGtmYKMJ9XEGma8lcshh6bKLHrpvidktgPTeFnuYPZ/VFdsSAs8/VtJnvnOfGw==",
   "success": true,
-  "projectFilePath": "D:\\project\\sofuni-develop\\Server\\RentVacation.Dealers.Gateway\\RentVacation.Dealers.Gateway.csproj",
+  "projectFilePath": "D:\\project\\sofuni-develop1\\Server\\RentVacation.Dealers.Gateway\\RentVacation.Dealers.Gateway.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Profesor\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\Profesor\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.0\\automapper.extensions.microsoft.dependencyinjection.8.0.0.nupkg.sha512",

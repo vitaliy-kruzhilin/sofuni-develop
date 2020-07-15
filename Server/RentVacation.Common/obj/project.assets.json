@@ -7651,11 +7651,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\project\\sofuni-develop\\Server\\RentVacation.Common\\RentVacation.Common.csproj",
+      "projectUniqueName": "D:\\project\\sofuni-develop1\\Server\\RentVacation.Common\\RentVacation.Common.csproj",
       "projectName": "RentVacation.Common",
-      "projectPath": "D:\\project\\sofuni-develop\\Server\\RentVacation.Common\\RentVacation.Common.csproj",
+      "projectPath": "D:\\project\\sofuni-develop1\\Server\\RentVacation.Common\\RentVacation.Common.csproj",
       "packagesPath": "C:\\Users\\Profesor\\.nuget\\packages\\",
-      "outputPath": "D:\\project\\sofuni-develop\\Server\\RentVacation.Common\\obj\\",
+      "outputPath": "D:\\project\\sofuni-develop1\\Server\\RentVacation.Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

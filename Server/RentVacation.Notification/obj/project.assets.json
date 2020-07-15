@@ -7673,11 +7673,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\project\\sofuni-develop\\Server\\RentVacation.Notification\\RentVacation.Notification.csproj",
+      "projectUniqueName": "D:\\project\\sofuni-develop1\\Server\\RentVacation.Notification\\RentVacation.Notification.csproj",
       "projectName": "RentVacation.Notification",
-      "projectPath": "D:\\project\\sofuni-develop\\Server\\RentVacation.Notification\\RentVacation.Notification.csproj",
+      "projectPath": "D:\\project\\sofuni-develop1\\Server\\RentVacation.Notification\\RentVacation.Notification.csproj",
       "packagesPath": "C:\\Users\\Profesor\\.nuget\\packages\\",
-      "outputPath": "D:\\project\\sofuni-develop\\Server\\RentVacation.Notification\\obj\\",
+      "outputPath": "D:\\project\\sofuni-develop1\\Server\\RentVacation.Notification\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7696,8 +7696,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\project\\sofuni-develop\\Server\\RentVacation.Common\\RentVacation.Common.csproj": {
-              "projectPath": "D:\\project\\sofuni-develop\\Server\\RentVacation.Common\\RentVacation.Common.csproj"
+            "D:\\project\\sofuni-develop1\\Server\\RentVacation.Common\\RentVacation.Common.csproj": {
+              "projectPath": "D:\\project\\sofuni-develop1\\Server\\RentVacation.Common\\RentVacation.Common.csproj"
             }
           }
         }
