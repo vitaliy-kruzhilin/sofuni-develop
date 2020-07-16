@@ -11,8 +11,7 @@ namespace RentVacation.Admin.Infrastructure
     {
         private readonly ICurrentTokenService currentToken;
 
-        public JwtCookieAuthenticationMiddleware(ICurrentTokenService currentToken) 
-            => this.currentToken = currentToken;
+        public JwtCookieAuthenticationMiddleware(ICurrentTokenService currentToken) => this.currentToken = currentToken;
 
         public async Task InvokeAsync(HttpContext context, RequestDelegate next)
         {
@@ -31,8 +30,7 @@ namespace RentVacation.Admin.Infrastructure
 
     public static class JwtCookieAuthenticationMiddlewareExtensions
     {
-        public static IApplicationBuilder UseJwtCookieAuthentication(
-            this IApplicationBuilder app)
+        public static IApplicationBuilder UseJwtCookieAuthentication(this IApplicationBuilder app)
             => app
                 .UseMiddleware<JwtCookieAuthenticationMiddleware>()
                 .UseAuthentication();

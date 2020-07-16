@@ -11,8 +11,7 @@ namespace RentVacation.Statistics.Services.ApartamentViews
 {
     public class ApartamentViewService : DataService<ApartamentView>, IApartamentViewService
     {
-        public ApartamentViewService(StatisticsDbContext db)
-            : base(db)
+        public ApartamentViewService(StatisticsDbContext db) : base(db)
         {
         }
 

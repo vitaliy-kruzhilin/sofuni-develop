@@ -8,10 +8,8 @@ namespace RentVacation.Admin.Controllers
     {
         private readonly IStatisticsService statistics;
 
-        public StatisticsController(IStatisticsService statistics) 
-            => this.statistics = statistics;
+        public StatisticsController(IStatisticsService statistics) => this.statistics = statistics;
 
-        public async Task<IActionResult> Index()
-            => View(await this.statistics.Full());
+        public async Task<IActionResult> Index() => View(await this.statistics.Full());
     }
 }

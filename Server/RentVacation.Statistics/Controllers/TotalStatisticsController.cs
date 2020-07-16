@@ -10,11 +10,9 @@ namespace RentVacation.Statistics.Controllers
     {
         private readonly ITotalStatisticsService statistics;
 
-        public TotalStatisticsController(ITotalStatisticsService statistics) 
-            => this.statistics = statistics;
+        public TotalStatisticsController(ITotalStatisticsService statistics) => this.statistics = statistics;
 
         [HttpGet]
-        public async Task<TotalStatisticsOutputModel> Full()
-            => await this.statistics.Full();
+        public async Task<TotalStatisticsOutputModel> Full() => await this.statistics.Full();
     }
 }

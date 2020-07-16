@@ -8,6 +8,7 @@ using RentVacation.Dealers.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using RentVacation.Dealers.Models.Dealers;
 using System.Collections.Generic;
+using RentVacation.Common.Services.Data;
 
 namespace RentVacation.Dealers.Services.Dealers
 {
@@ -15,20 +16,17 @@ namespace RentVacation.Dealers.Services.Dealers
     {
         private readonly IMapper mapper;
 
-        public DealerService(DealersDbContext db, IMapper mapper)
-            : base(db)
+        public DealerService(DealersDbContext db, IMapper mapper) : base(db)
             => this.mapper = mapper;
 
         public async Task<bool> HasApartament(int dealerId, int apartamentId)
             => await this
                 .All()
                 .Where(d => d.Id == dealerId)
-                .AnyAsync(d => d.Apartaments
-                    .Any(c => c.Id == apartamentId));
+                .AnyAsync(d => d.Apartaments.Any(c => c.Id == apartamentId));
 
         public async Task<bool> IsDealer(string userId)
-            => await this.All()
-                        .AnyAsync(w => w.UserId == userId);
+            => await this.All().AnyAsync(w => w.UserId == userId);
 
         public async Task<DealerDetailsOutputModel> GetDetails(int id)
             => await this.mapper
@@ -55,8 +53,7 @@ namespace RentVacation.Dealers.Services.Dealers
             Expression<Func<Dealer, T>> selector)
         {
             var dealerData = await this
-                .Data
-                .Dealers
+                .All()
                 .Where(u => u.UserId == userId)
                 .Select(selector)
                 .FirstOrDefaultAsync();

@@ -12,9 +12,7 @@ namespace RentVacation.Identity.Data
         private readonly UserManager<User> userManager;
         private readonly RoleManager<IdentityRole> roleManager;
 
-        public DataSeeder(
-            UserManager<User> userManager,
-            RoleManager<IdentityRole> roleManager)
+        public DataSeeder(UserManager<User> userManager, RoleManager<IdentityRole> roleManager)
         {
             this.userManager = userManager;
             this.roleManager = roleManager;

@@ -26,7 +26,7 @@ namespace RentVacation.Statistics
                 .AddAutoMapper(Assembly.GetExecutingAssembly())
                 .AddScoped<IApartamentViewService, ApartamentViewService>()
                 .AddTransient<ITotalStatisticsService, TotalStatisticsService>()
-                .AddMessaging(typeof(ApartamentCreatedConsumer))
+                .AddMessaging(this.Configuration, typeof(ApartamentCreatedConsumer))
                 .AddControllers();
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

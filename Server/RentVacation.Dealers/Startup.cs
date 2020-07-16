@@ -32,7 +32,7 @@ namespace RentVacation.Dealers
                 .AddTransient<IDealerService, DealerService>()
                 .AddTransient<ICategoryService, CategoryService>()
                 .AddTransient<IApartamentService, ApartamentService>()
-                .AddMessaging()
+                .AddMessaging(this.Configuration)
                 .AddControllers();
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

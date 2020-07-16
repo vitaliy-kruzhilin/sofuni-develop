@@ -4,6 +4,7 @@ using RentVacation.Identity.Data.Models;
 using Microsoft.AspNetCore.Identity;
 using RentVacation.Identity.Models.Identity;
 using RentVacation.Common.Services;
+using AutoMapper;
 
 namespace RentVacation.Identity.Services.Identity
 {
@@ -13,20 +14,18 @@ namespace RentVacation.Identity.Services.Identity
 
         private readonly UserManager<User> userManager;
         private readonly ITokenGeneratorService jwtTokenGenerator;
+        private readonly IMapper mapper;
 
-        public IdentityService(UserManager<User> userManager, ITokenGeneratorService jwtTokenGenerator)
+        public IdentityService(UserManager<User> userManager, ITokenGeneratorService jwtTokenGenerator, IMapper mapper)
         {
             this.userManager = userManager;
             this.jwtTokenGenerator = jwtTokenGenerator;
+            this.mapper = mapper;
         }
 
         public async Task<Result<User>> Register(UserInputModel userInput)
         {
-            var user = new User
-            {
-                Email = userInput.Email,
-                UserName = userInput.Email
-            };
+            User user = this.mapper.Map<User>(userInput);
 
             var identityResult = await this.userManager.CreateAsync(user, userInput.Password);
 

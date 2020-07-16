@@ -11,10 +11,7 @@ namespace RentVacation.Admin.Infrastructure
         private static ServiceEndpoints serviceEndpoints;
 
         // Not working because of https://github.com/reactiveui/refit/issues/717
-        public static IServiceCollection AddExternalService<TService>(
-            this IServiceCollection services,
-            IConfiguration configuration)
-            where TService : class
+        public static IServiceCollection AddExternalService<TService>(this IServiceCollection services, IConfiguration configuration) where TService : class
         {
             if (serviceEndpoints == null)
             {

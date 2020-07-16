@@ -13,9 +13,7 @@ namespace RentVacation.Identity.Controllers
         private readonly IIdentityService identity;
         private readonly ICurrentUserService currentUser;
 
-        public IdentityController(
-            IIdentityService identity,
-            ICurrentUserService currentUser)
+        public IdentityController(IIdentityService identity, ICurrentUserService currentUser)
         {
             this.identity = identity;
             this.currentUser = currentUser;
@@ -55,10 +53,6 @@ namespace RentVacation.Identity.Controllers
         [Authorize]
         [Route(nameof(ChangePassword))]
         public async Task<ActionResult> ChangePassword(string userId, ChangePasswordInputModel input)
-            => await this.identity.ChangePassword(userId, new ChangePasswordInputModel
-            {
-                CurrentPassword = input.CurrentPassword,
-                NewPassword = input.NewPassword
-            });
+            => await this.identity.ChangePassword(userId, input);
     }
 }

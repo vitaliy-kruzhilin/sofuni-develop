@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using RentVacation.Common.Services.Data;
 using RentVacation.Dealers.Data.Models;
 using RentVacation.Dealers.Models.Apartaments;
 

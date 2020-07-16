@@ -5,6 +5,7 @@ using RentVacation.Dealers.Data;
 using RentVacation.Dealers.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using RentVacation.Dealers.Models.Categories;
+using RentVacation.Common.Services.Data;
 
 namespace RentVacation.Dealers.Services.Categories
 {
@@ -12,17 +13,14 @@ namespace RentVacation.Dealers.Services.Categories
     {
         private readonly IMapper mapper;
 
-        public CategoryService(DealersDbContext db, IMapper mapper) 
-            : base(db) 
+        public CategoryService(DealersDbContext db, IMapper mapper) : base(db) 
             => this.mapper = mapper;
 
-        public async Task<Category> Find(int categoryId)
-            => await this.Data.Categories.FindAsync(categoryId);
+        public async Task<Category> Find(int categoryId) => await this.Data.FindAsync<Category>(categoryId);
 
         public async Task<IEnumerable<CategoryOutputModel>> GetAll()
             => await this.mapper
-                .ProjectTo<CategoryOutputModel>(this
-                    .Data.Categories)
+                .ProjectTo<CategoryOutputModel>(this.All())
                 .ToListAsync();
     }
 }

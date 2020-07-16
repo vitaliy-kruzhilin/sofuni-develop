@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using RentVacation.Common.Data.Models;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -13,17 +14,25 @@ namespace RentVacation.Common.Services.Data
 
         protected IQueryable<TEntity> All() => this.Data.Set<TEntity>();
 
-        public async Task Save(
-            TEntity entity)
+        public async Task Save(TEntity entity, params Message[] messages)
         {
+            foreach (var message in messages)
+            {
+                this.Data.Add(message);
+            }
+
             this.Data.Update(entity);
 
             await this.Data.SaveChangesAsync();
         }
 
-        Task IDataService<TEntity>.Save(TEntity entity)
+        public async Task MarkMessageAsPublished(int id)
         {
-            throw new System.NotImplementedException();
+            var message = await this.Data.FindAsync<Message>(id);
+
+            message.MarkAsPublished();
+
+            await this.Data.SaveChangesAsync();
         }
     }
 }

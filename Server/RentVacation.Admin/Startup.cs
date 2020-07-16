@@ -35,8 +35,7 @@ namespace RentVacation.Admin
                 .AddTokenAuthentication(this.Configuration)
                 .AddScoped<ICurrentTokenService, CurrentTokenService>()
                 .AddTransient<JwtCookieAuthenticationMiddleware>()
-                .AddControllersWithViews(options => options
-                    .Filters.Add(new AutoValidateAntiforgeryTokenAttribute()));
+                .AddControllersWithViews(options => options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute()));
 
             services
                 .AddRefitClient<IIdentityService>()
@@ -62,19 +61,6 @@ namespace RentVacation.Admin
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
-
-            //app
-            //    .UseHttpsRedirection()
-            //    .UseStaticFiles()
-            //    .UseRouting()
-            //    .UseAuthorization();
-
-            //app.UseEndpoints(endpoints =>
-            //{
-            //    endpoints.MapControllerRoute(
-            //        name: "default",
-            //        pattern: "{controller=Home}/{action=Index}/{id?}");
-            //});
 
             app
                 .UseHttpsRedirection()

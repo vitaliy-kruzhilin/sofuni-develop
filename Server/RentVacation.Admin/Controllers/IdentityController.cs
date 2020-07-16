@@ -17,9 +17,7 @@ namespace RentVacation.Admin.Controllers
         private readonly IIdentityService identityService;
         private readonly IMapper mapper;
 
-        public IdentityController(
-            IIdentityService identityService,
-            IMapper mapper)
+        public IdentityController(IIdentityService identityService, IMapper mapper)
         {
             this.identityService = identityService;
             this.mapper = mapper;

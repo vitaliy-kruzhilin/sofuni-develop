@@ -17,13 +17,11 @@ namespace RentVacation.Statistics.Controllers
 
         [HttpGet]
         [Route(Id)]
-        public async Task<int> TotalViews(int id)
-            => await this.apartamentViews.GetTotalViews(id);
+        public async Task<int> TotalViews(int id) => await this.apartamentViews.GetTotalViews(id);
 
         [HttpGet]
         [Authorize]
-        public async Task<IEnumerable<ApartamentViewOutputModel>> TotalViews(
-            [FromQuery] IEnumerable<int> ids)
+        public async Task<IEnumerable<ApartamentViewOutputModel>> TotalViews([FromQuery] IEnumerable<int> ids)
             => await this.apartamentViews.GetTotalViews(ids);
     }
 }

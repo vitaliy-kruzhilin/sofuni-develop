@@ -1,10 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using RentVacation.Common.Data;
 using RentVacation.Statistics.Data.Models;
 using System.Reflection;
 
 namespace RentVacation.Statistics.Data
 {
-    public class StatisticsDbContext : DbContext
+    public class StatisticsDbContext : MessageDbContext
     {
         public StatisticsDbContext(DbContextOptions<StatisticsDbContext> options)
             : base(options)
@@ -15,11 +16,13 @@ namespace RentVacation.Statistics.Data
 
         public DbSet<TotalStatistics> TotalStatistics { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder builder)
-        {
-            builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+        protected override Assembly ConfigurationsAssembly => Assembly.GetExecutingAssembly();
 
-            base.OnModelCreating(builder);
-        }
+        //protected override void OnModelCreating(ModelBuilder builder)
+        //{
+        //    builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+        //    base.OnModelCreating(builder);
+        //}
     }
 }

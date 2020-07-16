@@ -1,4 +1,5 @@
-﻿using RentVacation.Dealers.Data.Models;
+﻿using RentVacation.Common.Models;
+using RentVacation.Dealers.Data.Models;
 
 namespace RentVacation.Dealers.Models.Dealers
 {

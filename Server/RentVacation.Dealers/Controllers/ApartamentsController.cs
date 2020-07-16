@@ -13,6 +13,7 @@ using RentVacation.Common.Services.Identity;
 using RentVacation.Common.Services;
 using MassTransit;
 using RentVacation.Common.Messages.Dealers;
+using RentVacation.Common.Data.Models;
 
 namespace RentVacation.Dealers.Controllers
 {
@@ -81,13 +82,19 @@ namespace RentVacation.Dealers.Controllers
                 }
             };
 
-            await this.apartaments.Save(apartament);
-
-            await this.massTransitBus.Publish(new ApartamentCreatedMessage()
+            var messageData = new ApartamentCreatedMessage()
             {
                 ApartamentId = apartament.Id,
                 Information = apartament.Information
-            });;
+            };
+
+            var message = new Message(messageData);
+
+            await this.apartaments.Save(apartament, message);
+
+            await this.massTransitBus.Publish(messageData);
+
+            await this.apartaments.MarkMessageAsPublished(message.Id);
 
             return new CreateApartamentOutputModel(apartament.Id);
         }
@@ -139,11 +146,11 @@ namespace RentVacation.Dealers.Controllers
         {
             var dealerId = await this.dealers.GetIdByUser(this.currentUser.UserId);
 
-            var dealerHasCar = await this.dealers.HasApartament(dealerId, id);
+            var dealerHasApartament = await this.dealers.HasApartament(dealerId, id);
 
-            if (!dealerHasCar)
+            if (!dealerHasApartament)
             {
-                return BadRequest(Result.Failure("You cannot edit this apartament."));
+                return BadRequest(Result.Failure("You cannot delete this apartament."));
             }
 
             return await this.apartaments.Delete(id);

@@ -1,13 +1,13 @@
 ﻿using System.Reflection;
 using RentVacation.Dealers.Data.Models;
 using Microsoft.EntityFrameworkCore;
+using RentVacation.Common.Data;
 
 namespace RentVacation.Dealers.Data
 {
-    public class DealersDbContext : DbContext
+    public class DealersDbContext : MessageDbContext
     {
-        public DealersDbContext(DbContextOptions<DealersDbContext> options)
-            : base(options)
+        public DealersDbContext(DbContextOptions<DealersDbContext> options): base(options)
         {
         }
 
@@ -17,11 +17,6 @@ namespace RentVacation.Dealers.Data
 
         public DbSet<Dealer> Dealers { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder builder)
-        {
-            builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-
-            base.OnModelCreating(builder);
-        }
+        protected override Assembly ConfigurationsAssembly => Assembly.GetExecutingAssembly();
     }
 }

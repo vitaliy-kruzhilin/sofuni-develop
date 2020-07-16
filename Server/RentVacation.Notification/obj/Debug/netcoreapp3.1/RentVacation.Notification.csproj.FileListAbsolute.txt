@@ -149,7 +149,6 @@ D:\project\sofuni-develop1\Server\RentVacation.Notification\obj\Debug\netcoreapp
 D:\project\sofuni-develop1\Server\RentVacation.Notification\obj\Debug\netcoreapp3.1\RentVacation.Notification.AssemblyInfoInputs.cache
 D:\project\sofuni-develop1\Server\RentVacation.Notification\obj\Debug\netcoreapp3.1\RentVacation.Notification.AssemblyInfo.cs
 D:\project\sofuni-develop1\Server\RentVacation.Notification\obj\Debug\netcoreapp3.1\RentVacation.Notification.csproj.CoreCompileInputs.cache
-D:\project\sofuni-develop1\Server\RentVacation.Notification\obj\Debug\netcoreapp3.1\RentVacation.Notification.MvcApplicationPartsAssemblyInfo.cs
 D:\project\sofuni-develop1\Server\RentVacation.Notification\obj\Debug\netcoreapp3.1\RentVacation.Notification.MvcApplicationPartsAssemblyInfo.cache
 D:\project\sofuni-develop1\Server\RentVacation.Notification\obj\Debug\netcoreapp3.1\RentVacation.Notification.RazorTargetAssemblyInfo.cache
 D:\project\sofuni-develop1\Server\RentVacation.Notification\obj\Debug\netcoreapp3.1\RentVacation.Notification.csproj.CopyComplete
@@ -158,3 +157,18 @@ D:\project\sofuni-develop1\Server\RentVacation.Notification\obj\Debug\netcoreapp
 D:\project\sofuni-develop1\Server\RentVacation.Notification\obj\Debug\netcoreapp3.1\RentVacation.Notification.dll
 D:\project\sofuni-develop1\Server\RentVacation.Notification\obj\Debug\netcoreapp3.1\RentVacation.Notification.pdb
 D:\project\sofuni-develop1\Server\RentVacation.Notification\obj\Debug\netcoreapp3.1\RentVacation.Notification.genruntimeconfig.cache
+D:\project\sofuni-develop1\Server\RentVacation.Notification\bin\Debug\netcoreapp3.1\Hangfire.AspNetCore.dll
+D:\project\sofuni-develop1\Server\RentVacation.Notification\bin\Debug\netcoreapp3.1\Hangfire.Core.dll
+D:\project\sofuni-develop1\Server\RentVacation.Notification\bin\Debug\netcoreapp3.1\Hangfire.SqlServer.dll
+D:\project\sofuni-develop1\Server\RentVacation.Notification\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+D:\project\sofuni-develop1\Server\RentVacation.Notification\bin\Debug\netcoreapp3.1\es\Hangfire.Core.resources.dll
+D:\project\sofuni-develop1\Server\RentVacation.Notification\bin\Debug\netcoreapp3.1\fa\Hangfire.Core.resources.dll
+D:\project\sofuni-develop1\Server\RentVacation.Notification\bin\Debug\netcoreapp3.1\nl\Hangfire.Core.resources.dll
+D:\project\sofuni-develop1\Server\RentVacation.Notification\bin\Debug\netcoreapp3.1\pt-BR\Hangfire.Core.resources.dll
+D:\project\sofuni-develop1\Server\RentVacation.Notification\bin\Debug\netcoreapp3.1\pt-PT\Hangfire.Core.resources.dll
+D:\project\sofuni-develop1\Server\RentVacation.Notification\bin\Debug\netcoreapp3.1\pt\Hangfire.Core.resources.dll
+D:\project\sofuni-develop1\Server\RentVacation.Notification\bin\Debug\netcoreapp3.1\zh-TW\Hangfire.Core.resources.dll
+D:\project\sofuni-develop1\Server\RentVacation.Notification\bin\Debug\netcoreapp3.1\zh\Hangfire.Core.resources.dll
+D:\project\sofuni-develop1\Server\RentVacation.Notification\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
+D:\project\sofuni-develop1\Server\RentVacation.Notification\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
+D:\project\sofuni-develop1\Server\RentVacation.Notification\obj\Debug\netcoreapp3.1\RentVacation.Notification.MvcApplicationPartsAssemblyInfo.cs

@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using AutoMapper;
+using RentVacation.Common.Models;
 using RentVacation.Dealers.Data.Models;
 
 namespace RentVacation.Dealers.Models.Categories

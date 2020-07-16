@@ -151,7 +151,6 @@ D:\project\sofuni-develop1\Server\RentVacation.Schedule\obj\Debug\netcoreapp3.1\
 D:\project\sofuni-develop1\Server\RentVacation.Schedule\obj\Debug\netcoreapp3.1\RentVacation.Schedule.AssemblyInfoInputs.cache
 D:\project\sofuni-develop1\Server\RentVacation.Schedule\obj\Debug\netcoreapp3.1\RentVacation.Schedule.AssemblyInfo.cs
 D:\project\sofuni-develop1\Server\RentVacation.Schedule\obj\Debug\netcoreapp3.1\RentVacation.Schedule.csproj.CoreCompileInputs.cache
-D:\project\sofuni-develop1\Server\RentVacation.Schedule\obj\Debug\netcoreapp3.1\RentVacation.Schedule.MvcApplicationPartsAssemblyInfo.cs
 D:\project\sofuni-develop1\Server\RentVacation.Schedule\obj\Debug\netcoreapp3.1\RentVacation.Schedule.MvcApplicationPartsAssemblyInfo.cache
 D:\project\sofuni-develop1\Server\RentVacation.Schedule\obj\Debug\netcoreapp3.1\RentVacation.Schedule.RazorTargetAssemblyInfo.cache
 D:\project\sofuni-develop1\Server\RentVacation.Schedule\obj\Debug\netcoreapp3.1\RentVacation.Schedule.csproj.CopyComplete
@@ -160,3 +159,18 @@ D:\project\sofuni-develop1\Server\RentVacation.Schedule\obj\Debug\netcoreapp3.1\
 D:\project\sofuni-develop1\Server\RentVacation.Schedule\obj\Debug\netcoreapp3.1\RentVacation.Schedule.dll
 D:\project\sofuni-develop1\Server\RentVacation.Schedule\obj\Debug\netcoreapp3.1\RentVacation.Schedule.pdb
 D:\project\sofuni-develop1\Server\RentVacation.Schedule\obj\Debug\netcoreapp3.1\RentVacation.Schedule.genruntimeconfig.cache
+D:\project\sofuni-develop1\Server\RentVacation.Schedule\bin\Debug\netcoreapp3.1\Hangfire.AspNetCore.dll
+D:\project\sofuni-develop1\Server\RentVacation.Schedule\bin\Debug\netcoreapp3.1\Hangfire.Core.dll
+D:\project\sofuni-develop1\Server\RentVacation.Schedule\bin\Debug\netcoreapp3.1\Hangfire.SqlServer.dll
+D:\project\sofuni-develop1\Server\RentVacation.Schedule\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+D:\project\sofuni-develop1\Server\RentVacation.Schedule\bin\Debug\netcoreapp3.1\es\Hangfire.Core.resources.dll
+D:\project\sofuni-develop1\Server\RentVacation.Schedule\bin\Debug\netcoreapp3.1\fa\Hangfire.Core.resources.dll
+D:\project\sofuni-develop1\Server\RentVacation.Schedule\bin\Debug\netcoreapp3.1\nl\Hangfire.Core.resources.dll
+D:\project\sofuni-develop1\Server\RentVacation.Schedule\bin\Debug\netcoreapp3.1\pt-BR\Hangfire.Core.resources.dll
+D:\project\sofuni-develop1\Server\RentVacation.Schedule\bin\Debug\netcoreapp3.1\pt-PT\Hangfire.Core.resources.dll
+D:\project\sofuni-develop1\Server\RentVacation.Schedule\bin\Debug\netcoreapp3.1\pt\Hangfire.Core.resources.dll
+D:\project\sofuni-develop1\Server\RentVacation.Schedule\bin\Debug\netcoreapp3.1\zh-TW\Hangfire.Core.resources.dll
+D:\project\sofuni-develop1\Server\RentVacation.Schedule\bin\Debug\netcoreapp3.1\zh\Hangfire.Core.resources.dll
+D:\project\sofuni-develop1\Server\RentVacation.Schedule\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
+D:\project\sofuni-develop1\Server\RentVacation.Schedule\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
+D:\project\sofuni-develop1\Server\RentVacation.Schedule\obj\Debug\netcoreapp3.1\RentVacation.Schedule.MvcApplicationPartsAssemblyInfo.cs

@@ -16,8 +16,6 @@ namespace RentVacation.Notification.Messages
         public ApartamentCreatedConsumer(IHubContext<NotificationHub> hub) => this.hub = hub;
 
         public async Task Consume(ConsumeContext<ApartamentCreatedMessage> context)
-        {
-            await this.hub.Clients.Groups("SpamGroup").SendAsync($"ReceiveNotification", $"New Apartament just added!");
-        }
+            => await this.hub.Clients.Groups("SpamGroup").SendAsync($"ReceiveNotification", $"New Apartament just added!");
     }
 }

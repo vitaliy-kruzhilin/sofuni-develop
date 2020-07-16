@@ -6,13 +6,13 @@ using Microsoft.Extensions.Hosting;
 using RentVacation.Common.Infrastructure;
 using RentVacation.Notification.Hubs;
 using RentVacation.Notification.Infrastructure;
+using RentVacation.Notification.Messages;
 
 namespace RentVacation.Notification
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
-            => this.Configuration = configuration;
+        public Startup(IConfiguration configuration) => this.Configuration = configuration;
 
         public IConfiguration Configuration { get; }
 
@@ -22,6 +22,7 @@ namespace RentVacation.Notification
                 .AddTokenAuthentication(
                     this.Configuration,
                     JwtConfiguration.BearerEvents)
+                .AddMessaging(this.Configuration, typeof(ApartamentCreatedConsumer))
                 .AddSignalR();
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

@@ -13,6 +13,8 @@ namespace RentVacation.Schedule.Data.Models
 
         public int ApartamentId { get; set; }
 
+        public string Information { get; set; }
+
         public ICollection<Reservation> Reservations { get; set; } = new List<Reservation>();
     }
 }

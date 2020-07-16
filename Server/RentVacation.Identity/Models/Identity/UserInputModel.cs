@@ -1,10 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using RentVacation.Common.Models;
+using RentVacation.Identity.Data.Models;
+using System.ComponentModel.DataAnnotations;
 
 using static RentVacation.Identity.Data.DataConstants.Identity;
 
 namespace RentVacation.Identity.Models.Identity
 {
-    public class UserInputModel
+    public class UserInputModel: IMapFrom<User>
     {
         [EmailAddress]
         [Required]

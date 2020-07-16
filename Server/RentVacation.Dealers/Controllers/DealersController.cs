@@ -52,7 +52,7 @@ namespace RentVacation.Dealers.Controllers
         [Authorize]
         public async Task<ActionResult> Create(CreateDealerInputModel input)
         {
-            var dealer = new Dealer
+            Dealer dealer = new Dealer
             {
                 Name = input.Name,
                 PhoneNumber = input.PhoneNumber,

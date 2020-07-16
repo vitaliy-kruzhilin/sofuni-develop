@@ -6,6 +6,7 @@ using RentVacation.Dealers.Data;
 using RentVacation.Dealers.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using RentVacation.Dealers.Models.Apartaments;
+using RentVacation.Common.Services.Data;
 
 namespace RentVacation.Dealers.Services.Apartaments
 {
@@ -15,25 +16,22 @@ namespace RentVacation.Dealers.Services.Apartaments
 
         private readonly IMapper mapper;
 
-        public ApartamentService(DealersDbContext db, IMapper mapper)
-            : base(db)
+        public ApartamentService(DealersDbContext db, IMapper mapper) : base(db)
             => this.mapper = mapper;
 
         public async Task<Apartament> Find(int id)
-            => await this
-                .All()
-                .FirstOrDefaultAsync(c => c.Id == id);
+            => await this.All().FirstOrDefaultAsync(c => c.Id == id);
 
         public async Task<bool> Delete(int id)
         {
-            var apartament = await this.Data.Apartaments.FindAsync(id);
+            var apartament = await this.Data.FindAsync<Apartament>(id);
 
             if (apartament == null)
             {
                 return false;
             }
 
-            this.Data.Apartaments.Remove(apartament);
+            this.Data.Remove(apartament);
 
             await this.Data.SaveChangesAsync();
 
@@ -42,16 +40,14 @@ namespace RentVacation.Dealers.Services.Apartaments
 
         public async Task<IEnumerable<ApartamentOutputModel>> GetListings(ApartamentsQuery query)
             => (await this.mapper
-                .ProjectTo<ApartamentOutputModel>(this
-                    .GetApartamentsQuery(query))
+                .ProjectTo<ApartamentOutputModel>(this.GetApartamentsQuery(query))
                 .ToListAsync())
                 .Skip((query.Page - 1) * ApartamentsPerPage)
                 .Take(ApartamentsPerPage); // EF Core bug forces me to execute paging on the client.
 
         public async Task<IEnumerable<MineApartamentOutputModel>> Mine(int dealerId, ApartamentsQuery query)
             => (await this.mapper
-                .ProjectTo<MineApartamentOutputModel>(this
-                    .GetApartamentsQuery(query, dealerId))
+                .ProjectTo<MineApartamentOutputModel>(this.GetApartamentsQuery(query, dealerId))
                 .ToListAsync())
                 .Skip((query.Page - 1) * ApartamentsPerPage)
                 .Take(ApartamentsPerPage); // EF Core bug forces me to execute paging on the client.
@@ -64,19 +60,15 @@ namespace RentVacation.Dealers.Services.Apartaments
                 .FirstOrDefaultAsync();
 
         public async Task<int> Total(ApartamentsQuery query)
-            => await this
-                .GetApartamentsQuery(query)
-                .CountAsync();
+            => await this.GetApartamentsQuery(query).CountAsync();
 
         private IQueryable<Apartament> AllAvailable()
-            => this
-                .All()
-                .Where(apartament => apartament.IsAvailable);
+            => this.All().Where(apartament => apartament.IsAvailable);
 
         private IQueryable<Apartament> GetApartamentsQuery(
             ApartamentsQuery query, int? dealerId = null)
         {
-            var dataQuery = this.Data.Apartaments.AsQueryable();
+            var dataQuery = this.All();
 
             if (dealerId.HasValue)
             {
