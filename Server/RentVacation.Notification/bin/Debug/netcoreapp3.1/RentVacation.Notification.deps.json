@@ -298,6 +298,67 @@
           "RentVacation.Notification.dll": {}
         }
       },
+      "AspNetCore.HealthChecks.Rabbitmq/3.1.2": {
+        "dependencies": {
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "3.1.5",
+          "RabbitMQ.Client": "6.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/HealthChecks.RabbitMQ.dll": {
+            "assemblyVersion": "3.1.2.0",
+            "fileVersion": "3.1.2.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/HealthChecks.RabbitMQ.dll": {}
+        }
+      },
+      "AspNetCore.HealthChecks.SqlServer/3.1.1": {
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "1.1.1",
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "3.1.5"
+        },
+        "runtime": {
+          "lib/netstandard2.0/HealthChecks.SqlServer.dll": {
+            "assemblyVersion": "3.1.1.0",
+            "fileVersion": "3.1.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/HealthChecks.SqlServer.dll": {}
+        }
+      },
+      "AspNetCore.HealthChecks.UI.Client/3.1.1": {
+        "dependencies": {
+          "AspNetCore.HealthChecks.UI.Core": "3.1.1",
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "3.1.5"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/HealthChecks.UI.Client.dll": {
+            "assemblyVersion": "3.1.1.0",
+            "fileVersion": "3.1.1.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/HealthChecks.UI.Client.dll": {}
+        }
+      },
+      "AspNetCore.HealthChecks.UI.Core/3.1.1": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.6",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.6",
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "3.1.5"
+        },
+        "runtime": {
+          "lib/netstandard2.0/HealthChecks.UI.Core.dll": {
+            "assemblyVersion": "3.1.1.0",
+            "fileVersion": "3.1.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/HealthChecks.UI.Core.dll": {}
+        }
+      },
       "AutoMapper/10.0.0": {
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
@@ -539,9 +600,11 @@
         }
       },
       "Microsoft.CSharp/4.7.0": {},
-      "Microsoft.Data.SqlClient/1.0.19269.1": {
+      "Microsoft.Data.SqlClient/1.1.1": {
         "dependencies": {
           "Microsoft.Identity.Client": "3.0.8",
+          "Microsoft.IdentityModel.JsonWebTokens": "5.5.0",
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.5.0",
           "Microsoft.Win32.Registry": "4.5.0",
           "System.Configuration.ConfigurationManager": "4.5.0",
           "System.Runtime.Caching": "4.5.0",
@@ -551,22 +614,22 @@
         },
         "runtime": {
           "lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll": {
-            "assemblyVersion": "1.0.19269.1",
-            "fileVersion": "1.0.19269.1"
+            "assemblyVersion": "1.11.20045.2",
+            "fileVersion": "1.11.20045.2"
           }
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll": {
             "rid": "unix",
             "assetType": "runtime",
-            "assemblyVersion": "1.0.19269.1",
-            "fileVersion": "1.0.19269.1"
+            "assemblyVersion": "1.11.20045.2",
+            "fileVersion": "1.11.20045.2"
           },
           "runtimes/win/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll": {
             "rid": "win",
             "assetType": "runtime",
-            "assemblyVersion": "1.0.19269.1",
-            "fileVersion": "1.0.19269.1"
+            "assemblyVersion": "1.11.20045.2",
+            "fileVersion": "1.11.20045.2"
           }
         },
         "compile": {
@@ -624,7 +687,7 @@
       },
       "Microsoft.EntityFrameworkCore.SqlServer/3.1.6": {
         "dependencies": {
-          "Microsoft.Data.SqlClient": "1.0.19269.1",
+          "Microsoft.Data.SqlClient": "1.1.1",
           "Microsoft.EntityFrameworkCore.Relational": "3.1.6"
         },
         "runtime": {
@@ -2005,6 +2068,9 @@
       },
       "RentVacation.Common/1.0.0": {
         "dependencies": {
+          "AspNetCore.HealthChecks.Rabbitmq": "3.1.2",
+          "AspNetCore.HealthChecks.SqlServer": "3.1.1",
+          "AspNetCore.HealthChecks.UI.Client": "3.1.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.0.1",
           "Hangfire.Core": "1.7.11",
           "Hangfire.SqlServer": "1.7.11",
@@ -3613,6 +3679,34 @@
       "serviceable": false,
       "sha512": ""
     },
+    "AspNetCore.HealthChecks.Rabbitmq/3.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EnKUl93QejmLOxx9vm8POm6mWGTPdUURUbQPYDuFXEdc9sFmG1irn0DLVoOt/XmmpcroRd0INFh42+MlyrQVfg==",
+      "path": "aspnetcore.healthchecks.rabbitmq/3.1.2",
+      "hashPath": "aspnetcore.healthchecks.rabbitmq.3.1.2.nupkg.sha512"
+    },
+    "AspNetCore.HealthChecks.SqlServer/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LwxrGcuxzatDdcQEPYBIONr06kFKm35svf4omUw7CJDgz/2mS9XNZgF/npwwZG0+3KM49ATjlc4tl1uJbSkHLw==",
+      "path": "aspnetcore.healthchecks.sqlserver/3.1.1",
+      "hashPath": "aspnetcore.healthchecks.sqlserver.3.1.1.nupkg.sha512"
+    },
+    "AspNetCore.HealthChecks.UI.Client/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EXM8gY1GMowFz6XU4CRS1qdrI5Vbc+ezsfVtBD3fLTOTrF/Jwf7yCYOFPMFE8yT6Nd90B47SSdFyLzQmZdnYUg==",
+      "path": "aspnetcore.healthchecks.ui.client/3.1.1",
+      "hashPath": "aspnetcore.healthchecks.ui.client.3.1.1.nupkg.sha512"
+    },
+    "AspNetCore.HealthChecks.UI.Core/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gl+M/xrkPxo/EX2AP4wNRNZgpQvZGrvX8iwnbN3lR+hyBYQE4Xq1ISk48uyveVeUpM3x0fJub7uStUgL/rQzNA==",
+      "path": "aspnetcore.healthchecks.ui.core/3.1.1",
+      "hashPath": "aspnetcore.healthchecks.ui.core.3.1.1.nupkg.sha512"
+    },
     "AutoMapper/10.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3718,12 +3812,12 @@
       "path": "microsoft.csharp/4.7.0",
       "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
     },
-    "Microsoft.Data.SqlClient/1.0.19269.1": {
+    "Microsoft.Data.SqlClient/1.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-p2xa+sUAt7IRNxCl8ZT77bd7qHVKookDJ4HDUc+ArWkFk204rIpFhHajCTQqomSbcYi+olwheqQrwr+ohGRmJw==",
-      "path": "microsoft.data.sqlclient/1.0.19269.1",
-      "hashPath": "microsoft.data.sqlclient.1.0.19269.1.nupkg.sha512"
+      "sha512": "sha512-4tYUViFd7kPYFjTQ2gKdJ78bFRAG065NQXe1XMw4rbfUDXBDR+6aNykEyfCSCOw16SC3cw2/hlfSR8YEwK1qpA==",
+      "path": "microsoft.data.sqlclient/1.1.1",
+      "hashPath": "microsoft.data.sqlclient.1.1.1.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore/3.1.6": {
       "type": "package",

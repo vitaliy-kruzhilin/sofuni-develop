@@ -8,6 +8,7 @@ using RentVacation.Identity.Data;
 using RentVacation.Common.Infrastructure;
 using RentVacation.Identity.Services.Identity;
 using RentVacation.Common.Services.Data;
+using RentVacation.Identity.Infrastructure;
 
 namespace RentVacation.Identity
 {
@@ -20,13 +21,8 @@ namespace RentVacation.Identity
         public void ConfigureServices(IServiceCollection services)
         {
             services
-                .AddDatabase<IdentityDbContext>(this.Configuration)
-                .AddApplicationSettings(this.Configuration)
-                .AddTokenAuthentication(this.Configuration)
-                .AddTransient<IIdentityService, IdentityService>()
-                .AddTransient<IDataSeeder, DataSeeder>()
-                .AddTransient<ITokenGeneratorService, TokenGeneratorService>()
-                .AddControllers();
+                .AddWebServices<IdentityDbContext>(this.Configuration)
+                .AddClasses();
 
             services
                 .AddIdentity<User, IdentityRole>(options =>

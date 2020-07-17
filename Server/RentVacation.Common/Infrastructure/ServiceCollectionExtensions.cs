@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using RentVacation.Common.Messages;
 using RentVacation.Common.Models;
 using RentVacation.Common.Services.Identity;
 using System;
@@ -18,6 +19,21 @@ namespace RentVacation.Common.Infrastructure
 {
     public static class ServiceCollectionExtensions
     {
+        public static IServiceCollection AddWebServices<TDbContext>(this IServiceCollection services, IConfiguration configuration)
+            where TDbContext : DbContext
+        {
+            services
+                .AddDatabase<TDbContext>(configuration)
+                .AddApplicationSettings(configuration)
+                .AddTokenAuthentication(configuration)
+                .AddHealth(configuration)
+                .AddAutoMapperProfile(Assembly.GetCallingAssembly())
+                .AddControllers();
+
+            return services;
+        }
+
+
         public static IServiceCollection AddDatabase<TDbContext>(this IServiceCollection services, IConfiguration configuration) where TDbContext : DbContext
             => services
                 .AddDbContext<TDbContext>(options => options
@@ -94,6 +110,8 @@ namespace RentVacation.Common.Infrastructure
                             host.Password("rabbitmq");
                         });
 
+                        rmq.UseHealthCheck(bus);
+
                         foreach (var consumer in consumers)
                         {
                             rmq.ReceiveEndpoint(consumer.FullName, endpoint =>
@@ -116,9 +134,23 @@ namespace RentVacation.Common.Infrastructure
                     .UseRecommendedSerializerSettings()
                     .UseSqlServerStorage(configuration.GetDefaultConnectionString()));
 
-            services.AddHangfireServer();
+            services
+                .AddHangfireServer()
+                .AddHostedService<MessagesHostedService>();
 
-            //services.AddHostedService<MessagesHostedService>();
+            return services;
+        }
+
+
+        public static IServiceCollection AddHealth(this IServiceCollection services, IConfiguration configuration)
+        {
+            var healthChecks = services.AddHealthChecks();
+
+            healthChecks
+                .AddSqlServer(configuration.GetDefaultConnectionString());
+
+            healthChecks
+                .AddRabbitMQ(rabbitConnectionString: "amqp://rabbitmq:rabbitmq@rabbitmq/");
 
             return services;
         }

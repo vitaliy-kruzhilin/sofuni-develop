@@ -19,9 +19,7 @@ namespace RentVacation.Notification
         public void ConfigureServices(IServiceCollection services) 
             => services
                 .AddCors()
-                .AddTokenAuthentication(
-                    this.Configuration,
-                    JwtConfiguration.BearerEvents)
+                .AddTokenAuthentication(this.Configuration, JwtConfiguration.BearerEvents)
                 .AddMessaging(this.Configuration, typeof(ApartamentCreatedConsumer))
                 .AddSignalR();
 

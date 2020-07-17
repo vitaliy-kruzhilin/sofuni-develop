@@ -154,7 +154,6 @@ D:\project\sofuni-develop1\Server\RentVacation.Dealers.Gateway\bin\Debug\netcore
 D:\project\sofuni-develop1\Server\RentVacation.Dealers.Gateway\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\project\sofuni-develop1\Server\RentVacation.Dealers.Gateway\bin\Debug\netcoreapp3.1\RentVacation.Common.dll
 D:\project\sofuni-develop1\Server\RentVacation.Dealers.Gateway\bin\Debug\netcoreapp3.1\RentVacation.Common.pdb
-D:\project\sofuni-develop1\Server\RentVacation.Dealers.Gateway\obj\Debug\netcoreapp3.1\RentVacation.Dealers.Gateway.csprojAssemblyReference.cache
 D:\project\sofuni-develop1\Server\RentVacation.Dealers.Gateway\obj\Debug\netcoreapp3.1\RefitStubs.g.cs
 D:\project\sofuni-develop1\Server\RentVacation.Dealers.Gateway\obj\Debug\netcoreapp3.1\RentVacation.Dealers.Gateway.AssemblyInfoInputs.cache
 D:\project\sofuni-develop1\Server\RentVacation.Dealers.Gateway\obj\Debug\netcoreapp3.1\RentVacation.Dealers.Gateway.AssemblyInfo.cs
@@ -182,3 +181,7 @@ D:\project\sofuni-develop1\Server\RentVacation.Dealers.Gateway\bin\Debug\netcore
 D:\project\sofuni-develop1\Server\RentVacation.Dealers.Gateway\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
 D:\project\sofuni-develop1\Server\RentVacation.Dealers.Gateway\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
 D:\project\sofuni-develop1\Server\RentVacation.Dealers.Gateway\obj\Debug\netcoreapp3.1\RentVacation.Dealers.Gateway.MvcApplicationPartsAssemblyInfo.cs
+D:\project\sofuni-develop1\Server\RentVacation.Dealers.Gateway\bin\Debug\netcoreapp3.1\HealthChecks.RabbitMQ.dll
+D:\project\sofuni-develop1\Server\RentVacation.Dealers.Gateway\bin\Debug\netcoreapp3.1\HealthChecks.SqlServer.dll
+D:\project\sofuni-develop1\Server\RentVacation.Dealers.Gateway\bin\Debug\netcoreapp3.1\HealthChecks.UI.Client.dll
+D:\project\sofuni-develop1\Server\RentVacation.Dealers.Gateway\bin\Debug\netcoreapp3.1\HealthChecks.UI.Core.dll

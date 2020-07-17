@@ -20,14 +20,10 @@ namespace RentVacation.Statistics
 
         public void ConfigureServices(IServiceCollection services)
             => services
-                .AddDatabase<StatisticsDbContext>(this.Configuration)
-                .AddApplicationSettings(this.Configuration)
-                .AddTokenAuthentication(this.Configuration)
-                .AddAutoMapper(Assembly.GetExecutingAssembly())
+                .AddWebServices<StatisticsDbContext>(this.Configuration)
                 .AddScoped<IApartamentViewService, ApartamentViewService>()
                 .AddTransient<ITotalStatisticsService, TotalStatisticsService>()
-                .AddMessaging(this.Configuration, typeof(ApartamentCreatedConsumer))
-                .AddControllers();
+                .AddMessaging(this.Configuration, typeof(ApartamentCreatedConsumer));
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
             => app

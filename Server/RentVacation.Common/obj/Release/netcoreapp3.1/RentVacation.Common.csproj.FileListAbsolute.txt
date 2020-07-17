@@ -1,0 +1,9 @@
+D:\project\sofuni-develop1\Server\RentVacation.Common\bin\Release\netcoreapp3.1\RentVacation.Common.deps.json
+D:\project\sofuni-develop1\Server\RentVacation.Common\bin\Release\netcoreapp3.1\RentVacation.Common.dll
+D:\project\sofuni-develop1\Server\RentVacation.Common\bin\Release\netcoreapp3.1\RentVacation.Common.pdb
+D:\project\sofuni-develop1\Server\RentVacation.Common\obj\Release\netcoreapp3.1\RentVacation.Common.csprojAssemblyReference.cache
+D:\project\sofuni-develop1\Server\RentVacation.Common\obj\Release\netcoreapp3.1\RentVacation.Common.AssemblyInfoInputs.cache
+D:\project\sofuni-develop1\Server\RentVacation.Common\obj\Release\netcoreapp3.1\RentVacation.Common.AssemblyInfo.cs
+D:\project\sofuni-develop1\Server\RentVacation.Common\obj\Release\netcoreapp3.1\RentVacation.Common.csproj.CoreCompileInputs.cache
+D:\project\sofuni-develop1\Server\RentVacation.Common\obj\Release\netcoreapp3.1\RentVacation.Common.dll
+D:\project\sofuni-develop1\Server\RentVacation.Common\obj\Release\netcoreapp3.1\RentVacation.Common.pdb

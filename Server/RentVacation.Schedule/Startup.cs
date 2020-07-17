@@ -18,14 +18,9 @@ namespace RentVacation.Schedule
         public IConfiguration Configuration { get; }
         public void ConfigureServices(IServiceCollection services)
             => services
-                .AddDatabase<ScheduleDbContext>(this.Configuration)
-                .AddApplicationSettings(this.Configuration)
-                .AddTokenAuthentication(this.Configuration)
-                .AddAutoMapper(Assembly.GetExecutingAssembly())
+                .AddWebServices<ScheduleDbContext>(this.Configuration)
                 .AddTransient<IRentedApartamentService, RentedApartamentService>()
-                .AddMessaging(
-                    this.Configuration,
-                    typeof(ApartamentUpdatedConsumer));
+                .AddMessaging(this.Configuration, typeof(ApartamentUpdatedConsumer));
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
             => app

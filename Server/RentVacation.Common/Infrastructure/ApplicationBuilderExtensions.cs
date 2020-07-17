@@ -3,7 +3,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using RentVacation.Common.Services.Data;
+using HealthChecks.UI.Client;
 
 namespace RentVacation.Common.Infrastructure
 {
@@ -25,8 +27,15 @@ namespace RentVacation.Common.Infrastructure
                     .AllowAnyMethod())
                 .UseAuthentication()
                 .UseAuthorization()
-                .UseEndpoints(endpoints => endpoints
-                    .MapControllers());
+                .UseEndpoints(endpoints =>
+                {
+                    endpoints.MapHealthChecks("/health", new HealthCheckOptions
+                    {
+                        ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+                    });
+
+                    endpoints.MapControllers();
+                });
 
             return app;
         }

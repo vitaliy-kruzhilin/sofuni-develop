@@ -174,3 +174,7 @@ D:\project\sofuni-develop1\Server\RentVacation.Dealers\bin\Debug\netcoreapp3.1\z
 D:\project\sofuni-develop1\Server\RentVacation.Dealers\bin\Debug\netcoreapp3.1\zh\Hangfire.Core.resources.dll
 D:\project\sofuni-develop1\Server\RentVacation.Dealers\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
 D:\project\sofuni-develop1\Server\RentVacation.Dealers\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
+D:\project\sofuni-develop1\Server\RentVacation.Dealers\bin\Debug\netcoreapp3.1\HealthChecks.RabbitMQ.dll
+D:\project\sofuni-develop1\Server\RentVacation.Dealers\bin\Debug\netcoreapp3.1\HealthChecks.SqlServer.dll
+D:\project\sofuni-develop1\Server\RentVacation.Dealers\bin\Debug\netcoreapp3.1\HealthChecks.UI.Client.dll
+D:\project\sofuni-develop1\Server\RentVacation.Dealers\bin\Debug\netcoreapp3.1\HealthChecks.UI.Core.dll

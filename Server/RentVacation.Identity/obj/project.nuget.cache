@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "fwibtEKA7SIBxSjJyeZH2o0tveLdCdzHPi/p1dPqhiR5+QU8X1VT29iXWRAA+J3bPuAholpw0R3OZlSjsshwaw==",
+  "dgSpecHash": "QjQuSJxMiYhAy8yXg0tC8aPvRP62DlKTIVH6iwCfk326kRuMEK1h7hI6Rfw3grYkAQ8ZLgf+6vFgM8EpbBVXyQ==",
   "success": true,
   "projectFilePath": "D:\\project\\sofuni-develop1\\Server\\RentVacation.Identity\\RentVacation.Identity.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Profesor\\.nuget\\packages\\aspnetcore.healthchecks.rabbitmq\\3.1.2\\aspnetcore.healthchecks.rabbitmq.3.1.2.nupkg.sha512",
+    "C:\\Users\\Profesor\\.nuget\\packages\\aspnetcore.healthchecks.sqlserver\\3.1.1\\aspnetcore.healthchecks.sqlserver.3.1.1.nupkg.sha512",
+    "C:\\Users\\Profesor\\.nuget\\packages\\aspnetcore.healthchecks.ui.client\\3.1.1\\aspnetcore.healthchecks.ui.client.3.1.1.nupkg.sha512",
+    "C:\\Users\\Profesor\\.nuget\\packages\\aspnetcore.healthchecks.ui.core\\3.1.1\\aspnetcore.healthchecks.ui.core.3.1.1.nupkg.sha512",
     "C:\\Users\\Profesor\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\Profesor\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.1\\automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",
     "C:\\Users\\Profesor\\.nuget\\packages\\automatonymous\\5.0.0\\automatonymous.5.0.0.nupkg.sha512",
@@ -22,7 +26,7 @@
     "C:\\Users\\Profesor\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Profesor\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\Profesor\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\Profesor\\.nuget\\packages\\microsoft.data.sqlclient\\1.0.19269.1\\microsoft.data.sqlclient.1.0.19269.1.nupkg.sha512",
+    "C:\\Users\\Profesor\\.nuget\\packages\\microsoft.data.sqlclient\\1.1.1\\microsoft.data.sqlclient.1.1.1.nupkg.sha512",
     "C:\\Users\\Profesor\\.nuget\\packages\\microsoft.entityframeworkcore\\3.1.6\\microsoft.entityframeworkcore.3.1.6.nupkg.sha512",
     "C:\\Users\\Profesor\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\3.1.6\\microsoft.entityframeworkcore.abstractions.3.1.6.nupkg.sha512",
     "C:\\Users\\Profesor\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\3.1.6\\microsoft.entityframeworkcore.analyzers.3.1.6.nupkg.sha512",

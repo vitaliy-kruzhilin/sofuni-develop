@@ -12,6 +12,7 @@ using RentVacation.Common.Infrastructure;
 using RentVacation.Common.Services.Data;
 using RentVacation.Dealers.Data;
 using MassTransit;
+using RentVacation.Dealers.Infrastructure;
 
 namespace RentVacation.Dealers
 {
@@ -23,17 +24,9 @@ namespace RentVacation.Dealers
 
         public void ConfigureServices(IServiceCollection services)
             => services
-                .AddDatabase<DealersDbContext>(this.Configuration)
-                .AddApplicationSettings(this.Configuration)
-                .AddTokenAuthentication(this.Configuration)
-                .AddAutoMapper(Assembly.GetExecutingAssembly())
-                .AddScoped<ICurrentUserService, CurrentUserService>()
-                .AddTransient<IDataSeeder, DataSeeder>()
-                .AddTransient<IDealerService, DealerService>()
-                .AddTransient<ICategoryService, CategoryService>()
-                .AddTransient<IApartamentService, ApartamentService>()
-                .AddMessaging(this.Configuration)
-                .AddControllers();
+                .AddWebServices<DealersDbContext>(this.Configuration)
+                .AddClasses()
+                .AddMessaging(this.Configuration);
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
             => app

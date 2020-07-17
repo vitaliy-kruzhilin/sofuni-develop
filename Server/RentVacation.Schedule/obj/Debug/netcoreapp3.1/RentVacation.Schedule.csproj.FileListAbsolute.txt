@@ -147,7 +147,6 @@ D:\project\sofuni-develop1\Server\RentVacation.Schedule\bin\Debug\netcoreapp3.1\
 D:\project\sofuni-develop1\Server\RentVacation.Schedule\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\project\sofuni-develop1\Server\RentVacation.Schedule\bin\Debug\netcoreapp3.1\RentVacation.Common.dll
 D:\project\sofuni-develop1\Server\RentVacation.Schedule\bin\Debug\netcoreapp3.1\RentVacation.Common.pdb
-D:\project\sofuni-develop1\Server\RentVacation.Schedule\obj\Debug\netcoreapp3.1\RentVacation.Schedule.csprojAssemblyReference.cache
 D:\project\sofuni-develop1\Server\RentVacation.Schedule\obj\Debug\netcoreapp3.1\RentVacation.Schedule.AssemblyInfoInputs.cache
 D:\project\sofuni-develop1\Server\RentVacation.Schedule\obj\Debug\netcoreapp3.1\RentVacation.Schedule.AssemblyInfo.cs
 D:\project\sofuni-develop1\Server\RentVacation.Schedule\obj\Debug\netcoreapp3.1\RentVacation.Schedule.csproj.CoreCompileInputs.cache
@@ -174,3 +173,7 @@ D:\project\sofuni-develop1\Server\RentVacation.Schedule\bin\Debug\netcoreapp3.1\
 D:\project\sofuni-develop1\Server\RentVacation.Schedule\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
 D:\project\sofuni-develop1\Server\RentVacation.Schedule\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
 D:\project\sofuni-develop1\Server\RentVacation.Schedule\obj\Debug\netcoreapp3.1\RentVacation.Schedule.MvcApplicationPartsAssemblyInfo.cs
+D:\project\sofuni-develop1\Server\RentVacation.Schedule\bin\Debug\netcoreapp3.1\HealthChecks.RabbitMQ.dll
+D:\project\sofuni-develop1\Server\RentVacation.Schedule\bin\Debug\netcoreapp3.1\HealthChecks.SqlServer.dll
+D:\project\sofuni-develop1\Server\RentVacation.Schedule\bin\Debug\netcoreapp3.1\HealthChecks.UI.Client.dll
+D:\project\sofuni-develop1\Server\RentVacation.Schedule\bin\Debug\netcoreapp3.1\HealthChecks.UI.Core.dll
